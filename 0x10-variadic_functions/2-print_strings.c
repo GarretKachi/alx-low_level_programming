@@ -12,8 +12,8 @@
  * Description: If separator is NULL, it is not printed.
  *              If one of the strings if NULL, (nil) is printed instead.
  */
-
 void print_strings(const char *separator, const unsigned int n, ...)
+
 {
 	va_list strings;
 	char *str;
@@ -32,7 +32,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", str);
 
 		if (index != (n - 1) && separator != NULL)
-				printf("%s", separator);
+			printf("%s", separator);
 	}
 
 	printf("\n");
